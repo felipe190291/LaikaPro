@@ -1,0 +1,191 @@
+
+@media (max-width:  1023px) {
+    .text_download {
+        font-size: 25px!important;
+        text-align: center!important;
+        padding: 50px 0 0 0!important;
+    }
+    .img-app_v2 {
+        width: 32%;
+        max-width:5rem !important;
+    }
+
+}
+.swiper-button-next,.swiper-button-prev {
+    color:#603e85 !important
+}
+.mySwiperde .swiper-slide {
+    width:auto
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+.box_categories_v2 {
+    width: auto;
+    height: 85px !important;
+    border-radius: 50%;
+}
+.card_categories_home {
+    width: 160px;
+    line-height: 1.3;
+}
+
+@media (min-width:  1024px) {
+    .disapear-extendForm{
+        display:none;
+    }
+    .text_subscription{
+        border: 2px solid #603e85 !important;
+        border-right:0px solid #fff !important
+    }
+    .text_subscription::placeholder{
+        color:#603e85 !important
+    }
+    a{
+        color:#603e85!important
+    }
+    .color_purple{
+        color:#603e85;
+    }
+    .p_title_footer ,#footer{
+        color:#603e85;
+        font-weight:800 !important;
+    }
+
+    .background_banner_experiencie>div>p.text_download {
+        font-size: 35px;
+        text-align: left;
+        padding: 35px 12% 0 20%;
+    }
+    .img-app_v2 {
+        width: 32%;
+        max-width:8rem !important;
+    }
+    
+}
+
+.btn_subcription {
+    border: 2px solid #603e85!important;
+    border-left: 0 solid #fff!important;
+    border-radius: 0!important;
+    border-top-right-radius: 3px!important;
+    border-bottom-right-radius: 3px!important;
+}
+.container_subcription{
+ padding:0 2rem;
+    
+}
+.bg_purple{
+    background-color:#603e85;
+}
+.b_imgs_secure {
+    border: 1px solid #ccc;
+    height: 23px;
+  width:100%;
+   padding:3rem;
+    
+}
+@media (max-width:  1023px) {
+    .profesiones{
+        display:grid;text-align:center;justify-content: center;width: 100%;grid-template-columns:repeat(3,1fr); grid-column-gap: auto; 
+      }
+      .img_figure{
+        width: 100%;height: 100%;padding:9%;max-width:10rem;max-height:10rem;
+      }
+      .img_figureds{
+        width: 100%;height: 100%;padding:4%;max-width:10rem;max-height:10rem;
+      }
+  
+     
+}
+@media (min-width:  1024px) {
+    .allcontent-laika-food{
+        display:none !important;
+    }
+    .sliderPublicidad {
+        margin:0 2rem !important;
+    }
+    .profesiones{
+       display:flex;  justify-content: center;align-items:center;margin:auto;
+      }
+      .img_figure{
+        width: 100%;height: 100%;padding:12%;max-width:8rem;max-height:8rem;
+      }
+      .img_figureds{
+        width: 100%;height: 100%;padding:2%;max-width:10rem;max-height:10rem;
+      }
+}
+
+
+  .div_figure_card:nth-child(5) {
+    grid-column-start:span 2;
+  }
+  .div_figure_card:nth-child(6) {
+  
+    
+    grid-column-start:span 2;
+    
+  }
+
+  
+  
+  .figure_de_figures{
+  
+      
+      margin:auto !important;
+    align-items: center;
+    justify-content: center;
+  }
+.background_banner_experiencie {
+    border-radius:10px;background: linear-gradient(45deg,#533675 0,#7b4fad 15%,#9b64d9 30%,#b273f9 50%,#9b64d9 70%,#7b4fad 85%,#533675 100%);
+    color:#ffff;height:20rem;
+}
+
+  
+ 
+  .div_figure_card{
+    background-color: #e9ecef;;min-width:2rem;;width:100% ;  
+    display: inline-block;
+    
+    align-items: center;
+  }
+.text_input_seccion{
+    border:2px solid #603e85 !important ;
+    border-right: 0 solid white!important;
+    border-top: 2px solid #603e85!important;
+    border-bottom: 2px solid #603e85!important;
+    border-left: 2px solid #603e85!important;
+}
+.texto_subcri{
+    color:#603e85 ;
+}
+.text_input_seccion::placeholder{
+    color:#603e85 !important;
+    font-weight:600;
+}
+.bulletsPublicidad .swiper-pagination-bullet.active {
+    background-color: var(--laika);
+    opacity: 1;
+}
+.change-color-social{
+    color:var(--laika)
+}
+.bulletsPublicidad .swiper-pagination-bullet {
+    width: 2vmin;
+    height: 2vmin;
+    border-radius:50%;
+    background-color: rgb(239, 239, 239);
+}
+.sliderPublicidad .sliderimg img {
+    width: 100%;
+    height:100%;
+
+    background-size:cover !important;
+}
+.bulletsPublicidad {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}

@@ -1,0 +1,22 @@
+.perri_bonito{
+    text-align: center;
+    background-color: #fff;
+    padding: 5px;
+    margin:auto 10px;
+    text-decoration:none !important;
+    width: 6rem !important;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+#dropdownDog{
+    max-width:25rem;
+    position: absolute;
+    top:9rem;
+    background: white;
+    z-index: 8888;
+}
+@media (max-width:  1023px) {
+    #footer{
+        display: none !important;
+    }
+}

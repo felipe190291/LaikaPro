@@ -1,0 +1,139 @@
+
+
+.container-inside-all{
+display:flex;
+background-color:var(--laika);
+flex-direction:column;
+height:10rem;
+}
+.container-header{
+padding:0 10px;
+}
+.icon_search {
+    padding: 7px 10px;
+    z-index: 10;
+    cursor: pointer;
+    color: #614186;
+    position: absolute;
+}
+.icon_close_searcher {
+    right: 0;
+    padding: 7px 15px;
+}
+.icon_close_searcher, .icon_search {
+    padding: 7px 10px;
+    z-index: 10;
+    cursor: pointer;
+    color: #614186;
+    position: absolute;
+}
+.autocomplete_search_style {
+    padding-left: 45px!important;
+    border: 0 solid #ced4da!important;
+    border-radius: 8px!important;
+    z-index: 2;}
+.border_card_products {
+    height: 32em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f3f3f3;
+}
+.custom-radio-button input[type=radio]:checked+span label {
+    opacity: 1;
+    display: inline-table!important;
+    max-width: max-content;
+    min-width: 40px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    background: #603e85;
+    color: #fff;
+}
+.banner_footer_experience {
+    display: flex;
+    justify-content: left;
+}
+.background_banner_experiencie>div>.download_icons_home {
+    padding: 12px 12% 40px 30%;
+}
+.img-app_v2 {
+    width: 32%;
+}
+.background_banner_experiencie {
+    border-radius: 10px;
+    background: #533675;
+    background: linear-gradient(45deg,#533675 0,#7b4fad 15%,#9b64d9 30%,#b273f9 50%,#9b64d9 70%,#7b4fad 85%,#533675 100%);
+    color: #fff;
+}
+.background_banner_experiencie>div>p.text_download {
+    font-size: 35px;
+    text-align: left;
+    padding: 35px 12% 0 30%;
+}
+
+.custom-radio-button input[type=radio]+span label {
+    display: inline-block;
+    min-width: 36px;
+    width: auto;
+    max-width: max-content!important;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 36px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 3px;
+    border: solid 1px #653f90;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 37px;
+}
+.custom-radio-button-scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 58px;}
+
+.box_products {
+    width: 17.5em;
+    box-sizing: border-box;
+    padding: 15px 10px;}
+    .img_card_products {
+        width: auto!important;
+        height: 190px;}
+        .classss {
+            height: 220px}
+            .text_product_card {
+                height: 44px;
+                color: #242424;
+                font-size: 20px;
+                font-family: Causten Round Semi Bold Oblique;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;}
+
+
+.btn_laika_member_cards {
+    padding: 4px 0;
+    border: 0;
+    font-size: 8px;
+}
+.font-12 {
+    font-size: 12px;
+}
+.btn_member {
+    border-radius: 5px;
+    background: #ffb100;
+    background: linear-gradient(0deg,#ffb100 0,#ffcb24 100%);
+    font-family: Causten Round Extra Bold Oblique!important;
+    color: #1f033e;
+    font-size: 12px;
+}
+
+

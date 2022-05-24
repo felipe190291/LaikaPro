@@ -1,0 +1,184 @@
+.all-container-nav{
+    position: sticky;
+    top:0;
+    z-index:1020;
+    background:var(--laika);
+}
+..header_icons_container {
+    width: 82%;
+    margin: 0 auto;
+    position: relative;
+    height: 25px;
+;
+}
+@media (max-width:  1023px) {
+    .lupa_search{
+        color: #4e3170;
+         position: absolute;
+         right: 3rem; 
+         margin:0.7rem
+        }
+        .disapearNabBlack{
+display:none;
+        }
+
+}
+@media (min-width:  1024px) {
+    .allcontent-laika-food{
+        display:none;
+    }
+    .lupa_search{
+        color: #4e3170;
+         position: absolute;
+         left: 43%; 
+         margin:0.7rem
+        }
+    .disapearNabBlack{ display:flex;}
+}
+.whatsapp_container_header {
+    display: inline;
+}
+.color_white{
+    color:#ffff;
+    text-decoration:none;
+}
+
+.header_icons_container>div:first-child {
+    position: relative;
+    left: 0;
+}
+.container-inside-nav{
+  
+  display:flex;
+  flex-wrap: wrap;
+  align-items:center;
+height:4rem;
+}
+.two-parts-nav{
+flex-direction:column;
+}
+#autocomplete_search{
+    border:1px solid #4e3170;
+}
+.image-dog-laika{
+    height:42px;
+    width:auto;
+    top:0;
+}
+.sugerencias_chat{
+    position: fixed;
+    top: 60%;
+   right:0;
+    
+    z-index: 9999999999;
+    background-color: #ff007a;
+    color: white;
+    /* height: 25%;
+    width: 5%; */
+    transform: rotate(
+180deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    cursor: pointer;
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    padding: 1rem 0.3rem;
+}
+
+@media (max-width:  1023px) {
+    .div-icon-left{
+        position: absolute;
+        left:45%;
+    }
+    .search_can{
+        padding: 0 2rem 1rem 2rem ;
+    }
+    .search_canweb{
+        display:none;
+    }
+}
+@media (min-width:  1024px) {
+    .div-icon-left{
+        position: absolute;
+        left:2%;
+    }
+    .search_can{
+        display:none ;
+    }
+    .button-icon-left {
+        display:none;
+    }
+    .search_canweb{
+        width:40%;
+        margin-left:8%;
+    }
+}
+
+
+.button-icon-left{
+  
+       margin:auto auto  auto 0;
+     
+        vertical-align: middle;
+}
+.button-icon-rigth{
+  
+       margin:auto 0  auto auto;
+     
+        vertical-align: middle;
+}
+.button-apparreance-nav{
+    background:transparent;
+    border:none;
+}
+.lupa_search{
+color: #4e3170;
+ position: absolute;
+ right: 3rem; 
+ margin:0.7rem
+}
+.circle_bg_cart {
+    background-color: #9d7dc2;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 1px;
+}
+.circle_bg__profile {
+    background-color: #4e3170;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 1px;
+}
+.circle-icon{
+   
+      
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-right: -10px;
+        background: #4e3170;
+        border-radius: 50%;
+}
+.navbar-toggler.icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;}

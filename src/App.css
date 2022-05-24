@@ -1,7 +1,16 @@
-.App {
-  text-align: center;
+:root{
+  overflow-x: hidden;
+  
 }
-
+:root{
+  --laika: #603e85;
+         --blue: #007bff;
+     --indigo: #6610f2;
+     --purple: #6f42c1;
+     --pink: #e83e8c;
+     --red: #dc3545;
+     --orange: #fd7e14;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

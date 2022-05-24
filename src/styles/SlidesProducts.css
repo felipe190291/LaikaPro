@@ -1,0 +1,92 @@
+.img_card_products {
+    width: auto!important;
+    height: 190px;
+}
+.color_laika_member {
+    color: #ac0000;
+}
+.custom-radio-button-scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 58px;
+}
+.card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+.sliderPublicidadprod {
+overflow: hidden;
+;
+}
+.sliderPublicidadprod .swiper-slide {
+width:25rem
+}
+.info_bubble {
+    border-radius: 8px;
+    background-color: #603e85;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    height: 56px;
+}
+.card_star {
+    color: #ffb100;
+}
+.custom-radio-button input[type=radio] {
+    display: none;
+}
+.custom-radio-button input[type=radio]:checked+span label {
+    opacity: 1;
+    display: inline-table!important;
+    max-width: max-content;
+    min-width: 40px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    background: #603e85;
+    color: #fff;
+}
+.box_products {
+    width: 17.5em;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    position:relative;
+}
+.btn_container_laika_member {
+    display: grid;
+}
+.btn_laika_member_cards {
+    padding: 4px 0;
+    border: 0;
+    font-size: 8px;
+}
+.btn_member {
+    border-radius: 5px;
+    background: #ffb100;
+    background: linear-gradient(0deg,#ffb100 0,#ffcb24 100%);
+    color: #1f033e;
+    font-size: 12px;
+}
+.border_card_products {
+    height: 32em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f3f3f3;
+}
+
+.text_product_card {
+    height: 44px;
+    color: #242424;
+    font-size: 20px;
+    font-family: 'Indie Flower';
+    font-weight:600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+  
+}
