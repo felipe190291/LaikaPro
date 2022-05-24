@@ -67,7 +67,7 @@ flex-direction:column;
 }
 .sugerencias_chat{
     position: fixed;
-    top: 60%;
+    top: 50%;
    right:0;
     
     z-index: 9999999999;

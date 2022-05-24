@@ -58,7 +58,7 @@ function Banner() {
       <div className="bulletsPublicidad"></div>
       <br />
       <Swiper
-        style={{ overflow: "hidden", width: "calc(100% - 15rem)" }}
+        style={{ overflow: "hidden", width: "calc(100% - 5rem)" }}
         navigation={true}
         modules={[Navigation]}
         slidesPerView="auto"
