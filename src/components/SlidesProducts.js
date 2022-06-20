@@ -7,11 +7,34 @@ function SlidesProducts() {
   const [allProducts, setallProducts] = useState(null);
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/articulos")
-      .then((res) => setallProducts(res.data))
+      .get("https://pruebabac.herokuapp.com/api/articulos")
+      .then((res) => {
+        console.log(res.data);
+        setallProducts(res.data);
+      })
       .catch((err) => {
         console.log(err.response);
       });
+    // let formdata = new FormData();
+    // formdata.append("name", "Wow Cat Cocinado");
+    // formdata.append("descuento", 10);
+    // formdata.append(
+    //   "imagen",
+    //   "https://laika.com.co/cdn-cgi/image/format=auto,quality=80,sharpen=1/https://s3.us-east-1.amazonaws.com/laikapp/images_products/d8c26eacb4f8cdf0d8f4086d50b84eb2.png"
+    // );
+    // formdata.append("gramos", 300);
+    // formdata.append("puntuacion", 5);
+    // formdata.append("precio", 3300);
+    // formdata.append("descripcion", "Las mascotas lo disfrutan mucho");
+
+    // axios
+    //   .post("https://pruebabac.herokuapp.com/api/articulos", formdata)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err.response);
+    //   });
   }, []);
   console.log(allProducts && allProducts);
 
@@ -38,7 +61,10 @@ function SlidesProducts() {
             <span id="product_out_of_stock_fav_4414"></span>
             <div className="border_card_products">
               <div className="row classNamess justify-content-center">
-                <a href="https://laika.com.co/product_details/bog/salvaje-dieta-horneada-natural-salmon/dog">
+                <a
+                  href="https://laika.com.co/product_details/bog/salvaje-dieta-horneada-natural-salmon/dog"
+                  className="text-center"
+                >
                   <img
                     id="img_product_favorities_4414"
                     alt="Salvaje Dieta Horneada Natural Salmon"
