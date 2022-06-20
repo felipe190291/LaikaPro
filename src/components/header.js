@@ -276,7 +276,7 @@ function Header() {
         <div className="background_banner_experiencie d-flex">
           <div className="col-lg-7 col-xl-8">
             <p className="text_download ">
-              Para una mejor{" "}
+              Para suna mejor{" "}
               <strong className="font_causten_round_extra_bold_oblique">
                 experiencia
               </strong>{" "}

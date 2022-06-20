@@ -202,8 +202,9 @@ function SlidesProducts() {
           {render_img_mobile ? (
             render_img_mobile
           ) : (
-            <h1 style={{ color: "red", textAlign: "center" }}>
-              Conectese a servidor local para obtener carta de productos
+            <h1 style={{ color: "#603e85", textAlign: "center" }}>
+              <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+              <span class="sr-only"></span>
             </h1>
           )}
         </Swiper>

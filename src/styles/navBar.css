@@ -65,6 +65,18 @@ flex-direction:column;
     width:auto;
     top:0;
 }
+.chat_whatsapp{
+    background-color: green;
+    position: fixed;
+    top: 75%;
+    color:white;
+ 
+    border-radius:50%;
+    text-align: center;
+    justify-content: center;
+    
+   right:2rem;
+}
 .sugerencias_chat{
     position: fixed;
     top: 50%;
