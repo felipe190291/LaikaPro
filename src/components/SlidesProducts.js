@@ -144,7 +144,7 @@ function SlidesProducts() {
     <>
       <div style={{ padding: "0 4rem" }} className="sliderPublicidadprod">
         <Swiper
-          style={{ overflow: "hidden", width: "80%", margin: "0 auto" }}
+          style={{ overflow: "hidden", width: "100%", margin: "0 auto" }}
           spaceBetween={1}
           slidesPerView="auto"
           slidesOffsetBefore={0}
