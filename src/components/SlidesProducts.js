@@ -142,7 +142,7 @@ function SlidesProducts() {
 
   return (
     <>
-      <div style={{ padding: "0 4rem" }} className="sliderPublicidadprod">
+      <div style={{ padding: "0 3rem" }} className="sliderPublicidadprod">
         <Swiper
           style={{ overflow: "hidden", width: "100%", margin: "0 auto" }}
           spaceBetween={1}

@@ -156,12 +156,23 @@ function NavBar() {
                 <img src={colombia} width="30" style={{ margin: "auto" }} />
                 <select
                   className="button-apparreance-nav"
-                  style={{
-                    color: "#ffff",
-                    background: "#614186",
-                    textTransform: "uppercase",
-                    maxWidth: "55px",
-                  }}
+                  style={
+                    laptopMedia.matches
+                      ? {
+                          color: "#ffff",
+                          background: "#614186",
+                          textTransform: "uppercase",
+                          maxWidth: "55px",
+                          fontSize: "1vw",
+                        }
+                      : {
+                          color: "#ffff",
+                          background: "#614186",
+                          textTransform: "uppercase",
+                          maxWidth: "55px",
+                          fontSize: "0.7rem",
+                        }
+                  }
                 >
                   {Ciudades &&
                     Ciudades.sort().map((e) => (
