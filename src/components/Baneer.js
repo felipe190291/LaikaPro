@@ -3,7 +3,6 @@ import "../styles/Banner.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
-import { calculateNewValue } from "@testing-library/user-event/dist/utils";
 
 function Banner() {
   SwiperCore.use([Pagination, Autoplay, Navigation]);
@@ -58,14 +57,18 @@ function Banner() {
       <div className="bulletsPublicidad"></div>
       <br />
       <Swiper
-        style={{ overflow: "hidden", width: "calc(100% - 5rem)" }}
+        style={{
+          padding: "0 5%",
+          width: "90%",
+          justifyContent: "center",
+        }}
         navigation={true}
         modules={[Navigation]}
         slidesPerView="auto"
         className="mySwiperde"
-        spaceBetween={30}
-        slidesOffsetBefore={40}
-        slidesOffsetAfter={10}
+        spaceBetween={20}
+        slidesOffsetBefore={20}
+        slidesOffsetAfter={20}
         slidesPerGroup={1}
         slidesPerGroupSkip={1}
       >
@@ -79,7 +82,7 @@ function Banner() {
                   src="https://laikapp.s3.amazonaws.com/images_categories/categoria_alimento-min.png"
                 />
               </div>
-              <h3 className="font-14">Alimento</h3>
+              <h3 style={{ fontSize: "1rem" }}>Alimento</h3>
             </div>
           </li>
         </SwiperSlide>
@@ -93,7 +96,7 @@ function Banner() {
                   src="https://laikapp.s3.amazonaws.com/images_categories/categoria_snacks-min.png"
                 />
               </div>
-              <h3 className="font-14">Snacks</h3>
+              <h3 style={{ fontSize: "1rem" }}>Snacks</h3>
             </div>
           </li>{" "}
         </SwiperSlide>
@@ -107,7 +110,7 @@ function Banner() {
                   src="https://laikapp.s3.amazonaws.com/images_categories/categoria_farmacia.png"
                 />
               </div>
-              <h3 className="font-14">Accesorios</h3>
+              <h3 style={{ fontSize: "1rem" }}>Accesorios</h3>
             </div>
           </li>{" "}
         </SwiperSlide>
@@ -121,12 +124,11 @@ function Banner() {
                   src="https://laikapp.s3.amazonaws.com/images_categories/categoria_accesorios.png"
                 />
               </div>
-              <h3 className="font-14">Juguetes</h3>
+              <h3 style={{ fontSize: "1rem" }}>Juguetes</h3>
             </div>
           </li>{" "}
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <li className="item-a lslide" style={{ marginRight: "10px" }}>
             <div className="py-4 card_categories_home px-3 pt-2 pb-2 text-center cursor_pointer">
               <div className="pb-2">
@@ -136,7 +138,7 @@ function Banner() {
                   src="https://laikapp.s3.amazonaws.com/images_categories/categoria_higiene.png"
                 />
               </div>{" "}
-              <h3 className="font-14">Cuidado e Higiene</h3>
+              <h3 style={{ fontSize: "1rem" }}>Cuidado e Higiene</h3>
             </div>
           </li>
         </SwiperSlide>
@@ -150,7 +152,7 @@ function Banner() {
                   src="https://laikapp.s3.amazonaws.com/images_categories/categoria_petlover.png"
                 />
               </div>{" "}
-              <h3 className="font-14">Para PetLovers</h3>
+              <h3 style={{ fontSize: "1rem" }}>Para PetLovers</h3>
             </div>
           </li>
         </SwiperSlide>

@@ -1,9 +1,25 @@
 import "../styles/navBar.css";
 import colombia from "./assets/colombia_icon_127815.svg";
 import { laptopMedia } from "../utils/utils";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 // https://code.luasoftware.com/tutorials/bootstrap/bootstrap-hide-element-based-on-viewport-size/
 function NavBar() {
+  const [Ciudades, setCiudades] = useState(null);
+
+  useEffect(() => {
+    axios
+      .post("https://countriesnow.space/api/v0.1/countries/cities", {
+        country: "Colombia",
+      })
+      .then((res) => {
+        setCiudades(res.data.data);
+      })
+      .catch((err) => {
+        console.log(err.response);
+      });
+  }, []);
   return (
     <>
       <div
@@ -115,7 +131,7 @@ function NavBar() {
                 </span>
               </button>
             </div>
-            <div className="search_canweb mb-0">
+            <div className="search_canweb my-auto">
               <svg
                 className=" "
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,18 +152,46 @@ function NavBar() {
               />
             </div>
             <div className="button-icon-rigth d-flex">
-              <div className="button-apparreance-nav d-flex">
-                <img src={colombia} width="30" />
+              <div className="button-apparreance-nav">
+                <img src={colombia} width="30" style={{ margin: "auto" }} />
                 <select
                   className="button-apparreance-nav"
-                  style={{ color: "#ffff" }}
-                ></select>
+                  style={{
+                    color: "#ffff",
+                    background: "#614186",
+                    textTransform: "uppercase",
+                    maxWidth: "55px",
+                  }}
+                >
+                  {Ciudades &&
+                    Ciudades.sort().map((e) => (
+                      <option value={e}>{e.slice(0, 3)}</option>
+                    ))}
+                </select>
+              </div>
+              <div className="button-apparreance-nav media_disappear_cuenta">
+                <img
+                  src="https://laika.com.co/assets/home/profile_mc.svg "
+                  width="30"
+                  style={{
+                    marginLeft: "22vw",
+                    borderRadius: "50%",
+                    background: " #472f62",
+                    width: "25px",
+                    height: "25px",
+                    padding: "5px",
+                    marginTop: "auto",
+                    marginBottom: "auto",
+                    marginRight: "5px",
+                  }}
+                />
+                <div style={{ margin: "auto", color: "white" }}>Mi cuenta</div>
               </div>
               <button
                 className="button-apparreance-nav"
-                style={{ margin: "0 10px" }}
+                style={{ margin: "auto 4vw auto 1vw" }}
               >
-                <span style={{ color: "white" }}>
+                <span style={{ color: "white", position: "relative" }}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -158,6 +202,24 @@ function NavBar() {
                   >
                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
                   </svg>
+                  <span
+                    style={{
+                      position: "absolute",
+                      background: "#ff007a",
+                      color: "white",
+                      width: "15px",
+                      height: "15px",
+                      fontSize: "12px",
+                      padding: "auto",
+                      minWidth: "fit-content",
+                      display: "inline-block",
+                      fontWeight: "700",
+                      lineHeight: "1",
+                      borderRadius: "100%",
+                    }}
+                  >
+                    8
+                  </span>
                 </span>
               </button>
             </div>

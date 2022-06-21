@@ -1,6 +1,45 @@
 .perri_bonito{
     text-align: center;
-    background-color: #fff;
+    background-color: #614186;
+    padding: 5px;
+    margin:auto 10px;
+    text-decoration:none !important;
+    width: 6rem !important;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+.dropend .dropdown-toggle::after {
+    display:none !important;
+   
+}
+.button_despliegue{
+    color:#614186;
+    font-style:italic;
+    background:white;
+}
+.button_despliegue_text{
+    color:#614186;
+    font-style:italic;
+ font-weight:600;
+}
+.perri_bonito_media{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin:auto 10px;
+    text-decoration:none !important;
+    width: 12% !important;
+  
+    border-radius: 5px; 
+}
+.text_navbar_ban{
+    font-style:italic;
+    font-size:0.8rem;
+    font-weight:600;
+}
+.gato_bonito{
+    text-align: center;
+    background-color: #ffff;
     padding: 5px;
     margin:auto 10px;
     text-decoration:none !important;
@@ -12,10 +51,14 @@
     max-width:25rem;
     position: absolute;
     top:9rem;
+    left:0;
     background: white;
     z-index: 8888;
 }
 @media (max-width:  1023px) {
+    .perri_bonito_media{
+        display:none;
+    }
     #footer{
         display: none !important;
     }

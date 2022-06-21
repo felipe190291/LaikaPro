@@ -1,10 +1,11 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 import "../styles/SlidesProducts.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import axios from "axios";
+import { useEffect, useState } from "react";
 function SlidesProducts() {
   const [allProducts, setallProducts] = useState(null);
+
   useEffect(() => {
     axios
       .get("https://pruebabac.herokuapp.com/api/articulos")
@@ -15,28 +16,7 @@ function SlidesProducts() {
       .catch((err) => {
         console.log(err.response);
       });
-    // let formdata = new FormData();
-    // formdata.append("name", "Wow Cat Cocinado");
-    // formdata.append("descuento", 10);
-    // formdata.append(
-    //   "imagen",
-    //   "https://laika.com.co/cdn-cgi/image/format=auto,quality=80,sharpen=1/https://s3.us-east-1.amazonaws.com/laikapp/images_products/d8c26eacb4f8cdf0d8f4086d50b84eb2.png"
-    // );
-    // formdata.append("gramos", 300);
-    // formdata.append("puntuacion", 5);
-    // formdata.append("precio", 3300);
-    // formdata.append("descripcion", "Las mascotas lo disfrutan mucho");
-
-    // axios
-    //   .post("https://pruebabac.herokuapp.com/api/articulos", formdata)
-    //   .then((res) => {
-    //     console.log(res.data);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err.response);
-    //   });
   }, []);
-  console.log(allProducts && allProducts);
 
   const render_img_mobile =
     allProducts &&
@@ -49,16 +29,14 @@ function SlidesProducts() {
       const descuento = e.descuento;
       const precio = e.precio;
       const tagstar = document.getElementById("starts");
+      var arr_start = [];
       for (let i = 0; i < puntuacion; i++) {
-        const newOption = document.createElement("div");
-        console.log(tagstar);
-        tagstar && tagstar.appendChild(newOption);
+        arr_start.push(<i class="fa-xs fa fa-star card_star"></i>);
       }
 
       return (
         <SwiperSlide key={index} className="sliderimg2">
           <div className="box_products position-relative" key={id}>
-            <span id="product_out_of_stock_fav_4414"></span>
             <div className="border_card_products">
               <div className="row classNamess justify-content-center">
                 <a
@@ -66,9 +44,8 @@ function SlidesProducts() {
                   className="text-center"
                 >
                   <img
-                    id="img_product_favorities_4414"
+                    id={"img" + imagen}
                     alt="Salvaje Dieta Horneada Natural Salmon"
-                    data-src="https://laika.com.co/cdn-cgi/image/format=auto,quality=80,sharpen=1/https://laikapp.s3.amazonaws.com/dev_images_products/13509_66932_Salvaje_Dieta_Horneada_Natural_Salmon_1618354593_500x500.jpg"
                     className="img_card_products ml-auto mr-auto mt-3 mb-3 lazy"
                     style={{ width: "180px" }}
                     src={imagen}
@@ -89,7 +66,7 @@ function SlidesProducts() {
                     {name}
                   </h3>
                 </a>{" "}
-                <p className="mb-1" id="starts"></p>{" "}
+                {arr_start.length > 0 && arr_start.map((e) => e)}
                 <p className="h6 m-0 heigh_container_info_cards">
                   <span id="price_products_fav_4414">
                     <span id="price_fav_4414" className="mr-1">
@@ -107,25 +84,6 @@ function SlidesProducts() {
                         ${precio}
                       </strike>
                     </span>{" "}
-                    <button
-                      id="btn_cashback-fav_4414"
-                      type="button"
-                      data-html="true"
-                      data-container="body"
-                      data-toggle="popover"
-                      data-placement="top"
-                      data-content="Por la compra de este producto te devolveremos el <b> % en laikacoins</b>"
-                      className="btn color_purple span_product_journey font_causten_round_semi_bold_oblique d-none"
-                      data-original-title=""
-                      title=""
-                    >
-                      <img
-                        src="https://laika.com.co/assets/laika_money.svg"
-                        width="10"
-                      />
-                      <span id="cashback_fav_4414"></span>% Cashback{" "}
-                      <i className="fas fa-info-circle color_black_deep"></i>
-                    </button>
                     <span className="d-flex m-0 pt-1 mt-1 line_throught_info_cards_top">
                       <span className="mr-1 color_laika_member font-20">
                         <span className="mr-2 fav_price_laika_member_4414">
@@ -139,7 +97,7 @@ function SlidesProducts() {
                           className="ml-1 mb-1 lazy"
                           src="https://laika.com.co/assets/laikamemeber.svg"
                         />{" "}
-                        <button className="font-12 btn_member btn_laika_member_cards">
+                        <button className="font-4 btn_member btn_laika_member_cards p-2">
                           ADQUIÉRELA YA
                         </button>
                       </span>
@@ -160,14 +118,14 @@ function SlidesProducts() {
                     title="500 GR"
                     className="text_quantity_product text_overflow_1_line"
                   >
-                    <label for="fav_13509">500 GR</label>
+                    <label className="cuadro_gramos">500 GR</label>
                   </span>
                 </div>
               </div>
               <div className="card-footer p-0 mt-1">
                 <div id="btn_favs_laika">
                   <button
-                    style={{ background: "#603e85" }}
+                    style={{ background: "#603e85", width: "100%" }}
                     type="submit"
                     id="btn_general_favorites_4414"
                     className="btn btn-lg btn-block info_bubble  text-white"
@@ -186,11 +144,11 @@ function SlidesProducts() {
     <>
       <div style={{ padding: "0 4rem" }} className="sliderPublicidadprod">
         <Swiper
-          style={{ overflow: "hidden", width: "calc(100% - 2rem)" }}
+          style={{ overflow: "hidden", width: "80%", margin: "0 auto" }}
           spaceBetween={1}
           slidesPerView="auto"
-          slidesOffsetBefore={30}
-          slidesOffsetAfter={30}
+          slidesOffsetBefore={0}
+          slidesOffsetAfter={0}
           slidesPerGroup={1}
           slidesPerGroupSkip={1}
 

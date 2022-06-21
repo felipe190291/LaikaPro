@@ -217,16 +217,17 @@ function SectionInfoCorreo() {
                     </span>
                   </button>
                 </div>{" "}
-                <div className="custom-control custom-checkbox ">
+                <div className="custom-control custom-checkbox d-flex ">
                   <input
                     type="checkbox"
                     name="check_notifications"
                     id="check_notifications"
-                    className="custom-control-input check_subscription"
+                    className="custom-control-input check_subscription m-auto"
                   />{" "}
                   <label
                     for="check_notifications"
-                    className="custom-control-label pt-1 font-11 color_purple"
+                    style={{ fontSize: "0.6rem", margin: "auto 1vw" }}
+                    className="custom-control-label pt-1 color_purple"
                   >
                     He leído y acepto las{" "}
                     <a

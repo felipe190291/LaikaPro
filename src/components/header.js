@@ -849,7 +849,7 @@ function Header() {
                       className="ml-1 mb-1 lazy"
                       src="https://laika.com.co/assets/laikamemeber.svg"
                     />{" "}
-                    <button className="font-12 btn_member btn_laika_member_cards">
+                    <button className="font-8 btn_member btn_laika_member_cards p-2">
                       ADQUIÉRELA YA
                     </button>
                   </span>

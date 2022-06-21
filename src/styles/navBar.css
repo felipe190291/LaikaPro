@@ -12,6 +12,12 @@
 ;
 }
 @media (max-width:  1023px) {
+    .button-apparreance-nav{
+        background:transparent;
+        border:none;
+        display:flex;
+        flex-direction:column;
+    }
     .lupa_search{
         color: #4e3170;
          position: absolute;
@@ -21,9 +27,17 @@
         .disapearNabBlack{
 display:none;
         }
-
+.media_disappear_cuenta{
+    display:none
+}
 }
 @media (min-width:  1024px) {
+    .button-apparreance-nav{
+        background:transparent;
+        border:none;
+        display:flex;
+     
+    }
     .allcontent-laika-food{
         display:none;
     }
@@ -74,8 +88,8 @@ flex-direction:column;
     border-radius:50%;
     text-align: center;
     justify-content: center;
-    
-   right:2rem;
+    z-index: 9999999999;
+   right:30px;
 }
 .sugerencias_chat{
     position: fixed;
@@ -142,10 +156,7 @@ flex-direction:column;
      
         vertical-align: middle;
 }
-.button-apparreance-nav{
-    background:transparent;
-    border:none;
-}
+
 .lupa_search{
 color: #4e3170;
  position: absolute;
