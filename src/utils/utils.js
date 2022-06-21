@@ -30,7 +30,6 @@ export const AccordionItem = (props) => {
       </div>
     );
   });
-
   return (
     <div
       className="d-flex  shadow-sm  m-3 "
