@@ -672,7 +672,7 @@ function Header() {
                   name="check_notifications"
                   id="check_notifications"
                   className="custom-control-input check_subscription"
-                />{" "}
+                />
                 <label
                   for="check_notifications"
                   className="custom-control-label pt-1 font-11 color_purple"
